@@ -23,7 +23,7 @@ const Home = () => {
             >
               Strong & disciplined
             </div>
-            <Link className="btn btn-block btn-light" to="/gallery">
+            <Link className="btn btn-block btn-light" to="/classes">
               our classes <span>&rarr;</span>
             </Link>
           </div>

@@ -4,12 +4,14 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import NoPage from "./pages/NoPage";
+import Classes from "./pages/Classes";
 
 const App = () => {
   return (
     <HashRouter>
       <Routes>
         <Route index element={<Home />} />
+        <Route path="/classes" element={<Classes />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </HashRouter>
