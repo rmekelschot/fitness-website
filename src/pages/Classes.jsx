@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import banner from "../media/banner-homepage.png";
+import banner from "../media/banner-classes.png";
 
 import larry from "../media/larry2.png";
 import noel from "../media/noel.png";
@@ -10,11 +10,11 @@ import chris from "../media/chris.png";
 import jocko from "../media/jocko.png";
 import Footer from "../components/Footer";
 
-const pushAlert = ((classTitle, classCoach, classDatetime) => {
+const pushAlert = (classTitle, classCoach, classDatetime) => {
   alert(
     `U heeft geklikt op de les '${classTitle}', gegeven door ${classCoach} op ${classDatetime}`
   );
-});
+};
 
 const Classes = () => {
   const classes = [
@@ -59,11 +59,13 @@ const Classes = () => {
   return (
     <>
       <Header />
-      <div className="banner" style={{ justifyContent: "center" }}>
-        <img src={banner} alt="banner" className="d-block" height={"650px"} />
+      <div className="banner">
+        <div className="flex" style={{ justifyContent: "flex-end" }}>
+          <img src={banner} alt="banner" height={"650px"} />
+        </div>
         <div
-          className="d-block flex"
-          style={{ alignItems: "end", width: "30%" }}
+          className="flex w-100"
+          style={{justifyContent: 'center'}}
         >
           <div
             className="text-header text-light"
@@ -73,11 +75,13 @@ const Classes = () => {
           </div>
         </div>
       </div>
-      <div className="container flex" style={{justifyContent: 'center'}}>
-        <div style={{maxWidth: '840px'}}>
+      <div className="flex" style={{ justifyContent: "center" }}>
+
+      <div className="container">
+        <div>
           {classes.map((_class, i) => {
             return (
-              <div style={{ display: "inline-block" }}>
+              <div style={{ display: "inline-block" }} key={i}>
                 <div
                   className="card rounded flex"
                   style={{
@@ -90,7 +94,7 @@ const Classes = () => {
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
-                  key={i}
+                  
                 >
                   <div>
                     <h1
@@ -154,7 +158,12 @@ const Classes = () => {
                     </p>
 
                     <br />
-                    <span className="btn btn-block btn-light" onClick={()=>{pushAlert(_class.title, _class.coach, _class.datetime)}}>
+                    <span
+                      className="btn btn-block btn-light"
+                      onClick={() => {
+                        pushAlert(_class.title, _class.coach, _class.datetime);
+                      }}
+                    >
                       Join now <span>&rarr;</span>
                     </span>
                   </div>
@@ -164,7 +173,8 @@ const Classes = () => {
           })}
         </div>
       </div>
-      <Footer/>
+      </div>
+      <Footer />
     </>
   );
 };

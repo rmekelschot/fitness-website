@@ -6,11 +6,11 @@ const Header = () => {
   return (
     <>
       <header className="flex justify-content align-items shadow">
-        <div className="brand flex justify-content align-items">
+        <div className="brand text-light flex justify-content align-items" style={{maxWidth: '150px'}}>
             <img src={logo} alt="logo"/>
             <div style={{height: '50px'}}>
                 <h1>Fitter</h1>
-                <p>lorem ipsum</p>
+                <p>Super gains</p>
             </div>
         </div>
         <nav>

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import banner from "../media/banner-homepage.png";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -29,13 +30,15 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="flex" style={{justifyContent: 'center'}}>
+
       <div className="container">
         <div
           className="w-100 flex"
           style={{ justifyContent: "center", marginTop: "-40px" }}
         >
           <div className="card text-center rounded-tl rounded-br shadow-big">
-            <div className="icon" style={{color: '#ff0000'}}>
+            <div className="icon" style={{ color: "#ff0000" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -63,7 +66,7 @@ const Home = () => {
             </p>
           </div>
           <div className="card text-center rounded-tl rounded-br shadow-big">
-            <div className="icon" style={{color: '#ff0000'}}>
+            <div className="icon" style={{ color: "#ff0000" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -90,7 +93,7 @@ const Home = () => {
             </p>
           </div>
           <div className="card text-center rounded-tl rounded-br shadow-big">
-            <div className="icon" style={{color: '#ff0000'}}>
+            <div className="icon" style={{ color: "#ff0000" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
@@ -120,7 +123,16 @@ const Home = () => {
             </p>
           </div>
         </div>
+
+        <div style={{marginTop: '40px', padding: '15px'}}>
+          <div style={{width: '500px'}}>
+
+          <h1 style={{fontSize: '32px'}}>Discover the strength and beauty that the body is capable of</h1>
+          </div>
+        </div>
       </div>
+      </div>
+      <Footer />
     </>
   );
 };

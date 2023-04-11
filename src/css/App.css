@@ -29,6 +29,7 @@ nav a:hover {
 
 .container {
   width: 100%;
+  max-width: 880px;
   padding: 0px 20px;
 }
 
@@ -38,10 +39,6 @@ nav a:hover {
 
 .text-center {
   text-align: center;
-}
-
-.brand {
-  color: #fefefe;
 }
 
 .brand img {
@@ -57,9 +54,12 @@ nav a:hover {
 
 .brand div p, .text-subheader {
   font-size: 14px;
-  color: #efefef;
   font-weight: 400;
   padding-left: 10px;
+}
+
+.text-soft {
+  color: #efefef;
 }
 
 .flex {
@@ -163,5 +163,9 @@ nav a:hover {
 }
 
 footer {
-  padding-top: 100px;
+  padding: 100px 0px;
+}
+
+.footer-content .footer-item {
+  padding: 10px 0px;
 }
