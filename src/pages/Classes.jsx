@@ -8,6 +8,7 @@ import david from "../media/david.png";
 import tony from "../media/tony.png";
 import chris from "../media/chris.png";
 import jocko from "../media/jocko.png";
+import Footer from "../components/Footer";
 
 const pushAlert = ((classTitle, classCoach, classDatetime) => {
   alert(
@@ -163,6 +164,7 @@ const Classes = () => {
           })}
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

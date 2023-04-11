@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -158,4 +160,8 @@ nav a:hover {
 .icon svg {
   height: 50px;
   width: 35px;
+}
+
+footer {
+  padding-top: 100px;
 }
