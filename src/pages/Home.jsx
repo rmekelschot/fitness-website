@@ -130,9 +130,9 @@ const Home = () => {
           <h1 style={{fontSize: '32px'}}>Discover the strength and beauty that the body is capable of</h1>
           </div>
         </div>
-      </div>
-      </div>
       <Footer />
+      </div>
+      </div>
     </>
   );
 };

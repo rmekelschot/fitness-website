@@ -172,9 +172,9 @@ const Classes = () => {
             );
           })}
         </div>
-      </div>
-      </div>
       <Footer />
+      </div>
+      </div>
     </>
   );
 };

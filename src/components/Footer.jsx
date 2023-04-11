@@ -4,7 +4,7 @@ import logo from "../media/logo-red.png";
 const Footer = () => {
   return (
     <>
-      <footer className="flex" style={{ justifyContent: "center" }}>
+      <footer className="flex justify-content">
         <div
           className="footer-content"
           style={{ width: "350px", paddingRight: "50px" }}
