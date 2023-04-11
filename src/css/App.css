@@ -86,14 +86,13 @@ nav a:hover {
   color: #fefefe;
   display: inline;
   padding: 5px 10px;
-  margin: 5px;
-  font-size: 24px;
+  font-size: 12px;
   text-decoration: none;
 }
 
 .btn-block {
   border-radius: 0px;
-  padding: 10px;
+  padding: 10px 25px;
   text-transform: uppercase;
 }
 
@@ -101,7 +100,7 @@ nav a:hover {
   background-color: #fefefe;
   color: #000;
   font-weight: 900;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 .btn-light:hover {
@@ -123,10 +122,10 @@ nav a:hover {
   display: block;
 }
 
-a span {
+.btn span {
   color: #ff0000;
   font-weight: bolder;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .card {
@@ -135,6 +134,10 @@ a span {
   background-color: #fff;
   padding: 20px;
   margin: 15px;
+}
+
+.rounded {
+  border-radius: 10px;
 }
 
 .rounded-tl {
