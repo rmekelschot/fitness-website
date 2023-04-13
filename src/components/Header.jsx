@@ -21,7 +21,7 @@ const Header = () => {
               <Link to="/contact">Contact</Link>
         </nav>
         <nav>
-              <Link to="/join"><div className="btn" style={{fontSize: '24px'}}>+</div>&nbsp;Join now</Link>
+              <Link to="/join"><div className="btn" style={{fontSize: '16px'}}>+</div>&nbsp;Join now</Link>
         </nav>
       </header>
 

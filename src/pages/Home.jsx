@@ -3,8 +3,72 @@ import Header from "../components/Header";
 import banner from "../media/banner-homepage.png";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import jocko from "../media/jocko.png";
+import noel from "../media/noel.png";
+import david from "../media/david.png";
+
+import tier1 from '../media/tier1.png'
+import tier2 from '../media/tier2.png'
+import tier3 from '../media/tier3.png'
 
 const Home = () => {
+  const coaches = [
+    {
+      title: "Brazilian Jiu-Jitsu",
+      coach: "Jocko Willink",
+      bgImg: jocko,
+    },
+    {
+      title: "Bodybuilding",
+      coach: "Noel Deyzel",
+      bgImg: noel,
+    },
+    {
+      title: "Running",
+      coach: "David Goggins",
+      bgImg: david,
+    },
+  ];
+
+  const pricing = [
+    {
+      title: "Basic",
+      price: "20",
+      perks: [
+        "fitness",
+        "science based training",
+        "custom meal plan",
+        "personal coach",
+        "fat loss",
+      ],
+      tier: tier1,
+    },
+    {
+      title: "Standard",
+      price: "39",
+      perks: [
+        "fitness",
+        "science based training",
+        "custom meal plan",
+        "personal coach",
+        "fat loss",
+      ],
+      tier: tier2,
+    },
+    {
+      title: "Extra",
+      price: "65",
+      perks: [
+        "fitness",
+        "science based training",
+        "custom meal plan",
+        "personal coach",
+        "fat loss",
+      ],
+      tier: tier3,
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -37,7 +101,7 @@ const Home = () => {
             style={{ justifyContent: "center", marginTop: "-40px" }}
           >
             <div className="card text-center rounded-tl rounded-br shadow-big">
-              <div className="icon" style={{ color: "#ff0000" }}>
+              <div className="icon" style={{ color: "#ff4545" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={24}
@@ -65,7 +129,7 @@ const Home = () => {
               </p>
             </div>
             <div className="card text-center rounded-tl rounded-br shadow-big">
-              <div className="icon" style={{ color: "#ff0000" }}>
+              <div className="icon" style={{ color: "#ff4545" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={24}
@@ -92,7 +156,7 @@ const Home = () => {
               </p>
             </div>
             <div className="card text-center rounded-tl rounded-br shadow-big">
-              <div className="icon" style={{ color: "#ff0000" }}>
+              <div className="icon" style={{ color: "#ff4545" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={24}
@@ -132,8 +196,11 @@ const Home = () => {
                 Our easily understandable programs are designed to help you
                 achieve your goals
               </p>
-              <div className="flex justify-content" style={{marginTop: '20px'}}>
-                <div style={{marginBottom: '40px'}}>
+              <div
+                className="flex justify-content"
+                style={{ marginTop: "20px" }}
+              >
+                <div style={{ marginBottom: "40px" }}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon"
@@ -145,7 +212,7 @@ const Home = () => {
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    style={{ color: "#ff0000" }}
+                    style={{ color: "#ff4545" }}
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M16 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
@@ -171,7 +238,7 @@ const Home = () => {
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    style={{ color: "#ff0000" }}
+                    style={{ color: "#ff4545" }}
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M2 12h1"></path>
@@ -201,7 +268,7 @@ const Home = () => {
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    style={{ color: "#ff0000" }}
+                    style={{ color: "#ff4545" }}
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M3 21h18"></path>
@@ -228,6 +295,128 @@ const Home = () => {
             >
               Take a tour <span>&rarr;</span>
             </Link>
+          </div>
+            <div className="spacer"></div>
+          <div className="w-100 text-center">
+            <h1>Our team of experts</h1>
+            <p>Our team will assist you to make sure you reach your goals.</p>
+            <div className="flex" style={{ marginTop: '40px', justifyContent: "center" }}>
+              {coaches.map((coach, i) => {
+                return (
+                  <div style={{ display: "inline-block" }} key={i}>
+                    <div
+                      className="card rounded flex"
+                      style={{
+                        justifyContent: "center",
+                        alignItems: "end",
+                        height: "300px",
+                        backgroundColor: "#000000",
+                        padding: "30px",
+                        paddingBottom: "35px",
+                        backgroundImage: `url(${coach.bgImg})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                      }}
+                    >
+                      <div>
+                        <h1
+                          className="text-header text-light"
+                          style={{ fontSize: "24px" }}
+                        >
+                          {coach.coach}
+                        </h1>
+                        <p className="text-light">{coach.title}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="spacer"></div>
+          <div className="w-100 text-center">
+            <h1>Pricing plan</h1>
+            <div className="flex" style={{justifyContent: 'center'}}>
+
+            <p style={{maxWidth: '500px'}}>
+              fitter does not charge administration costs, registration is free.
+            </p>
+            </div>
+            <div className="flex" style={{ marginTop: '40px', justifyContent: "center" }}>
+              {pricing.map((pricing, i) => {
+                return (
+                  <div style={{ display: "inline-block" }} key={i}>
+                    <div
+                      className="card rounded shadow-big"
+                      style={{
+                        height: "425px",
+                        padding: "0px",
+                        overflow: "hidden",
+                      }}
+                    >
+                      <span
+                        className="image-container"
+                        style={{
+                          display: "block",
+                          height: "200px",
+                          width: "100%",
+                          backgroundImage: `url(${pricing.tier})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "right",
+                        }}
+                      ></span>
+                      <div
+                        className="flex"
+                        style={{ justifyContent: "center" }}
+                      >
+                        <div style={{backgroundColor:'#fff', padding: '15px', maxWidth: '250px', marginTop: '-35px'}}>
+                          <h1
+                            className="text-header"
+                            style={{ fontSize: "16px" }}
+                          >
+                            {pricing.title}
+                          </h1>
+                          <p>
+                            <sup
+                              style={{
+                                fontWeight: "300",
+                                fontSize: "20px",
+                              }}
+                            >
+                              &euro;
+                            </sup>
+                            <span
+                              style={{
+                                fontWeight: "bold",
+                                fontSize: "36px",
+                                padding: "10px",
+                              }}
+                            >
+                              {pricing.price}
+                            </span>
+                            <sub
+                              style={{
+                                fontWeight: "300",
+                                fontSize: "20px",
+                              }}
+                            >
+                              p/m
+                            </sub>
+                          </p>
+                          <ul style={{textAlign: 'left'}}>
+
+                          {pricing.perks.map((perk, i) => {
+                            return <li>{perk}</li>;
+                          })}
+                          </ul>
+                        </div>
+                      </div>
+                      <button className="btn btn-block" onClick={()=>{alert(`${pricing.title} subscription`)}}>go for it <span style={{color: '#fff'}}>&rarr;</span></button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <Footer />
         </div>
