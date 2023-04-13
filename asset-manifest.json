@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/fitness-website/static/css/main.ba65bbe1.css",
+    "main.js": "/fitness-website/static/js/main.be8e92c6.js",
+    "static/media/tier3.png": "/fitness-website/static/media/tier3.c03b4fbcfb170707c96d.png",
+    "static/media/tier2.png": "/fitness-website/static/media/tier2.0e7d520414cd04d60328.png",
+    "static/media/banner-homepage.png": "/fitness-website/static/media/banner-homepage.2675bac760737b56dab8.png",
+    "static/media/larry2.png": "/fitness-website/static/media/larry2.92f6c16ca6442cda0ded.png",
+    "static/media/banner-classes.png": "/fitness-website/static/media/banner-classes.6057a03d9fead8385c9f.png",
+    "static/media/tier1.png": "/fitness-website/static/media/tier1.e47e7eb9107b66ed6036.png",
+    "static/media/noel.png": "/fitness-website/static/media/noel.f57c31af3a71c40320e1.png",
+    "static/media/chris.png": "/fitness-website/static/media/chris.7a2e9258042b61c06ad1.png",
+    "static/media/david.png": "/fitness-website/static/media/david.d4a624f9e7952f0f6878.png",
+    "static/media/tony.png": "/fitness-website/static/media/tony.5682d0eedf55c7d9ab7d.png",
+    "static/media/jocko.png": "/fitness-website/static/media/jocko.73582f97f72f570e58fa.png",
+    "static/media/logo-red.png": "/fitness-website/static/media/logo-red.4dddb1918fbd02e8dd69.png",
+    "index.html": "/fitness-website/index.html",
+    "main.ba65bbe1.css.map": "/fitness-website/static/css/main.ba65bbe1.css.map",
+    "main.be8e92c6.js.map": "/fitness-website/static/js/main.be8e92c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba65bbe1.css",
+    "static/js/main.be8e92c6.js"
+  ]
+}
