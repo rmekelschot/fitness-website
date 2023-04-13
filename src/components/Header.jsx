@@ -16,9 +16,7 @@ const Header = () => {
         <nav>
               <Link to="/">Home</Link>
               <Link to="/classes">Classes</Link>
-              <Link to="/gallery">Gallery</Link>
               <Link to="/pricing">Pricing</Link>
-              <Link to="/contact">Contact</Link>
         </nav>
         <nav>
               <Link to="/pricing"><div className="btn" style={{fontSize: '16px'}}>+</div>&nbsp;Join now</Link>
