@@ -33,7 +33,7 @@ const Home = () => {
       <Header />
       <div className="banner flex" style={{ justifyContent: "center" }}>
         <img src={banner} alt="banner" />
-        <div className="flex align-items" style={{ width: "30%" }}>
+        <div className="flex align-items" style={{ width: "40%" }}>
           <div>
             <div
               className="text-header d-block text-light"
@@ -56,10 +56,10 @@ const Home = () => {
       <div className="flex" style={{ justifyContent: "center" }}>
         <div className="container">
           <div
-            className="w-100 flex"
+            className="w-100 noflex flex"
             style={{ justifyContent: "center", marginTop: "-40px" }}
           >
-            <div className="card text-center rounded-tl rounded-br shadow-big">
+            <div className="card fullWidth text-center rounded-tl rounded-br shadow-big">
               <div className="icon" style={{ color: "#ff4545" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ const Home = () => {
                 fit your needs
               </p>
             </div>
-            <div className="card text-center rounded-tl rounded-br shadow-big">
+            <div className="card fullWidth text-center rounded-tl rounded-br shadow-big">
               <div className="icon" style={{ color: "#ff4545" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ const Home = () => {
                 meal plan to achieve your goals
               </p>
             </div>
-            <div className="card text-center rounded-tl rounded-br shadow-big">
+            <div className="card fullWidth text-center rounded-tl rounded-br shadow-big">
               <div className="icon" style={{ color: "#ff4545" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +147,7 @@ const Home = () => {
           </div>
 
           <div style={{ marginTop: "40px", padding: "15px" }}>
-            <div style={{ width: "500px" }}>
+            <div style={{ maxWidth: "500px" }}>
               <h1 style={{ fontSize: "32px", marginBottom: "15px" }}>
                 Discover the strength and beauty that the body is capable of
               </h1>
@@ -259,12 +259,12 @@ const Home = () => {
           <div className="w-100 text-center">
             <h1>Our team of experts</h1>
             <p>Our team will assist you to make sure you reach your goals.</p>
-            <div className="flex" style={{ marginTop: '40px', justifyContent: "center" }}>
+            <div className="flex noflex" style={{ marginTop: '40px', justifyContent: "center" }}>
               {coaches.map((coach, i) => {
                 return (
                   <div style={{ display: "inline-block" }} key={i}>
                     <div
-                      className="card rounded flex"
+                      className="card rounded flex fixedWidth"
                       style={{
                         justifyContent: "center",
                         alignItems: "end",

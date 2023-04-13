@@ -4,24 +4,8 @@ import logo from "../media/logo-red.png";
 const Footer = () => {
   return (
     <>
-      <footer className="flex justify-content">
-        <div
-          className="footer-content"
-          style={{ width: "350px", paddingRight: "50px" }}
-        >
-          <div className="brand flex justify-content align-items" style={{maxWidth: '150px'}}>
-            <img src={logo} alt="logo" />
-            <div style={{ height: "50px" }}>
-              <h1>Fitter</h1>
-              <p>Super gains</p>
-            </div>
-          </div>
-          <br/>
-          <div className="text-subheader">Take your body to the next level with the help of our experts.</div>
-          <br/>
-          <p className="text-subheader">&copy; {new Date().getFullYear()} RM Ekelschot</p>
-        </div>
-        <div className="footer-content" style={{ paddingRight: "50px" }}>
+      <footer className="noflex flex fullWidth justify-content">
+        <div id="first" className="stack footer-content">
           <h1
             className="text-header"
             style={{ fontSize: "16px", marginBottom: "10px" }}
@@ -37,7 +21,7 @@ const Footer = () => {
             <p className="footer-item">Brazilian Jiu-Jitsu</p>
           </div>
         </div>
-        <div className="footer-content" style={{ paddingRight: "50px" }}>
+        <div id="second" className="stack footer-content">
           <h1
             className="text-header"
             style={{ fontSize: "16px", marginBottom: "10px" }}
@@ -58,6 +42,23 @@ const Footer = () => {
             </p>
             <p className="footer-item">closed</p>
           </div>
+        </div>
+        <div
+        id="third"
+          className="main footer-content"
+          style={{ maxWidth: "350px"}}
+        >
+          <div className="brand flex justify-content align-items" style={{maxWidth: '150px'}}>
+            <img src={logo} alt="logo" />
+            <div style={{ height: "50px" }}>
+              <h1>Fitter</h1>
+              <p>Super gains</p>
+            </div>
+          </div>
+          <br/>
+          <div className="text-subheader">Take your body to the next level with the help of our experts.</div>
+          <br/>
+          <p className="text-subheader">&copy; {new Date().getFullYear()} RM Ekelschot</p>
         </div>
       </footer>
     </>

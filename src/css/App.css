@@ -13,9 +13,10 @@ header {
   height: 100px;
   padding: 0px 20px;
   background-color: #000;
+  z-index: 99;
 }
 
-nav a {
+nav a, .nav-item {
   padding: 10px;
   margin: 10px;
   font-size: 16px;
@@ -23,7 +24,7 @@ nav a {
   color: #fefefe;
   text-decoration: none;
 }
-nav a:hover {
+nav a:hover, .nav-item:hover {
   color: #ff4545;
 }
 
@@ -175,10 +176,75 @@ footer {
   padding: 100px 15px;
 }
 
+footer #first {
+  order: 2;
+}
+
+footer #second {
+  order: 3;
+}
+
+footer #third {
+  order: 1;
+}
+
 .footer-content .footer-item {
   padding: 10px 0px;
 }
 
 .spacer {
   height: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .hide-mobile {
+    display: none;
+  }
+  
+  nav a, .nav-item {
+    display: block;
+    text-align: right;
+    margin: 0px;
+    margin-left: -35px;
+    padding: 0px;
+  }
+
+  .banner .flex {
+    position:absolute;
+    margin-top: 250px;
+  }
+
+  .noflex {
+    display: block;
+  }
+
+  .noflex .card {
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+
+  .fullWidth {
+    width: 100%;
+  }
+
+  .fixedWidth {
+    width: 250px;
+    height: 300px;
+  }
+
+  footer {
+    display: block;
+    margin: 0px;
+    padding: 100px 0px;
+  }
+
+  footer .stack {
+    width: 50%;
+    display: inline-block;
+  }
+
+  footer .main {
+    margin-top: 50px;
+  }
 }

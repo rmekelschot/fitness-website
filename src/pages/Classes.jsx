@@ -59,31 +59,42 @@ const Classes = () => {
   return (
     <>
       <Header />
-      <div className="banner">
-        <div className="flex" style={{ justifyContent: "flex-end" }}>
-          <img src={banner} alt="banner" height={"650px"} />
-        </div>
-        <div
-          className="flex w-100"
-          style={{justifyContent: 'center'}}
-        >
-          <div
-            className="text-header text-light"
-            style={{ marginBottom: "10px" }}
-          >
-            Classes
+      <div className="banner flex" style={{ justifyContent: "center" }}>
+        <img src={banner} alt="banner" />
+        <div className="flex align-items" style={{ width: "40%" }}>
+          <div>
+            <div
+              className="text-header d-block text-light"
+              style={{ marginBottom: "10px" }}
+            >
+              Our classes
+            </div>
+            {/* <div
+              className="text-header d-block text-light"
+              style={{ marginBottom: "40px", fontWeight: "400" }}
+            >
+              Strong & disciplined
+            </div> */}
           </div>
         </div>
       </div>
-      <div className="flex" style={{ justifyContent: "center" }}>
+      <div className="spacer"></div>
+      <div className="flex" style={{justifyContent: 'center', marginBottom: '40px'}}>
+        <div>
+
+        <h1>Classes we offer</h1>
+        <p>Taught by the experts in their field</p>
+        </div>
+      </div>
+      <div className="flex noflex" style={{ justifyContent: "center" }}>
 
       <div className="container">
         <div>
           {classes.map((_class, i) => {
             return (
-              <div style={{ display: "inline-block" }} key={i}>
+              <div className="fullWidth" style={{ display: "inline-block" }} key={i}>
                 <div
-                  className="card rounded flex"
+                  className="fullWidth card rounded flex"
                   style={{
                     alignItems: "end",
                     height: "300px",

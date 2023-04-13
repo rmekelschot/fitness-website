@@ -52,7 +52,7 @@ function PricingComponent() {
               Fitter does not charge administration costs, registration is free.
             </p>
             </div>
-            <div className="flex" style={{ marginTop: '40px', justifyContent: "center" }}>
+            <div className="flex noflex" style={{ marginTop: '40px', justifyContent: "center" }}>
               {pricing.map((pricing, i) => {
                 return (
                   <div style={{ display: "inline-block" }} key={i}>
@@ -116,7 +116,7 @@ function PricingComponent() {
                           <ul style={{textAlign: 'left'}}>
 
                           {pricing.perks.map((perk, i) => {
-                            return <li>{perk}</li>;
+                            return <li key={i}>{perk}</li>;
                           })}
                           </ul>
                         </div>
