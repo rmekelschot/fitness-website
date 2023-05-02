@@ -59,6 +59,8 @@ const Home = () => {
             className="w-100 noflex flex"
             style={{ justifyContent: "center", marginTop: "-40px" }}
           >
+              
+            <Link to="classes" style={{textDecoration: 'none', color: '#000'}}>
             <div className="card fullWidth text-center rounded-tl rounded-br shadow-big">
               <div className="icon" style={{ color: "#ff4545" }}>
                 <svg
@@ -87,6 +89,11 @@ const Home = () => {
                 fit your needs
               </p>
             </div>
+            
+            </Link>
+            
+            <Link to="nutrition" style={{textDecoration: 'none', color: '#000'}}>
+              
             <div className="card fullWidth text-center rounded-tl rounded-br shadow-big">
               <div className="icon" style={{ color: "#ff4545" }}>
                 <svg
@@ -114,6 +121,10 @@ const Home = () => {
                 meal plan to achieve your goals
               </p>
             </div>
+            </Link>
+            
+            <Link to="pricing" style={{textDecoration: 'none', color: '#000'}}>
+              
             <div className="card fullWidth text-center rounded-tl rounded-br shadow-big">
               <div className="icon" style={{ color: "#ff4545" }}>
                 <svg
@@ -144,6 +155,8 @@ const Home = () => {
                 need for optimal results
               </p>
             </div>
+            
+            </Link>
           </div>
 
           <div style={{ marginTop: "40px", padding: "15px" }}>
