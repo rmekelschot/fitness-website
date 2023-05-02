@@ -117,7 +117,7 @@ const Home = () => {
               <div className="text-header">nutrition</div>
               <br />
               <p>
-                good results require good nutrition. together we will create a
+                Good results require good nutrition. together we will create a
                 meal plan to achieve your goals
               </p>
             </div>
